@@ -1,0 +1,115 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  margin-top: 2px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu {
+  width: 256px;
+  margin: 16px;
+  padding: 8px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #718299;
+  box-shadow: 8px 8px 4px lightgray;
+}
+
+.label {
+  width: 56px;
+  height: 32px;
+}
+
+label {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  height: 32px;
+  width: 56px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #FFB196;
+  font-size: 24px;
+  display: flex;
+}
+
+.setting {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#score {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px black;
+  font-size: 24px;
+  height: 32px;
+  text-align: center;
+  width: 128px;
+}
+
+.row {
+  display: flex;
+  margin: 0;
+}
+
+.cell.snake {
+  background-image: url('./res/body.png'), url('./res/ground.png');
+}
+
+.cell.head {
+  background-image: url('./res/head.png'), url('./res/ground.png');
+}
+
+.cell.tail {
+  background-image: url('./res/tail.png'), url('./res/ground.png');
+}
+
+.cell.left {
+  background-image: url('./res/left.png'), url('./res/ground.png');
+}
+
+.cell.right {
+  background-image: url('./res/right.png'), url('./res/ground.png');
+}
+
+.cell.apple {
+  background-image: url('./res/apple.png'), url('./res/ground.png');
+}
+
+.cell.wall {
+  background-image: url('./res/wall.png');
+}
+
+
+.cell {
+  align-items: center;
+  background-color: sandybrown;
+  background-image: url('./res/ground.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid black; */
+  display: flex;
+  font: bold 12px arial, sans-serif;
+  height: 32px;
+  justify-content: center;
+  margin: 0;
+  user-select: none;
+  width: 32px;
+}
+
+.cell:focus {
+  outline: 0,
+}
